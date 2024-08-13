@@ -49,3 +49,11 @@ class Array:
         :return: Uma lista com todos os itens do array.
         """
         return self._items
+
+    def size(self):
+        """
+        Retorna o número de itens no array.
+
+        :return: O tamanho atual do array.
+        """
+        return len(self._items)
