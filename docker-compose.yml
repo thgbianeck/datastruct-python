@@ -1,0 +1,11 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: datastruct-python-image:latest
+    container_name: datastruct-python
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1

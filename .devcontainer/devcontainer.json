@@ -1,0 +1,60 @@
+{
+    "name": "Estruturas de Dados - Python",
+    "dockerComposeFile": ["../docker-compose.yml", "docker-compose.yml"],
+    "service": "app",
+    "workspaceFolder": "/app",
+   "features": {
+      "ghcr.io/devcontainers/features/common-utils:2": {
+        "installZsh": true,
+        "configureZshAsDefaultShell": true,
+        "installOhMyZsh": true,
+        "installOhMyZshConfig": true,
+        "upgradePackages": true
+      },
+      "ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {
+        "plugins": "git",
+        "omzPlugins": "https://github.com/zsh-users/zsh-autosuggestions",
+        "username": "python"
+      }
+    },
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "ms-python.python",
+          "ms-python.debugpy",
+          "cameron.vscode-pytest",
+          "littlefoxteam.vscode-python-test-adapter",
+          "esbenp.prettier-vscode",
+          "eamodio.gitlens",
+          "ms-azuretools.vscode-docker",
+          "dbaeumer.vscode-eslint",
+          "editorconfig.editorconfig",
+          "humao.rest-client",
+          "donjayamanne.githistory",
+          "tabnine.tabnine-vscode",
+          "xyz.local-history",
+          "mhutchie.git-graph",
+          "usernamehw.errorlens",
+          "jebbs.plantuml",
+          "qhoekman.language-plantuml",
+          "rvest.vs-code-prettier-eslint"
+        ],
+        "settings": {
+            "terminal.integrated.defaultProfile.linux": "zsh",
+            "terminal.integrated.shell.linux": "/bin/zsh",
+            "terminal.integrated.profiles.linux": {
+                "zsh": {
+                "path": "/bin/zsh"
+                }
+            },
+          "editor.formatOnSave": true,
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+          }
+        }
+      }
+    },
+    "remoteUser": "python"
+  }
+  
